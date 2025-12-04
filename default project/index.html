@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janob Limonjon - Minecraft Sayti</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        * { font-family: 'Roboto', sans-serif; }
+        body { scroll-behavior: smooth; }
+
+        /* Navbar */
+        .navbar {
+            transition: 0.4s;
+        }
+        .navbar.scrolled {
+            background-color: #111 !important;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* Header */
+        header {
+            height: 600px;
+            background-image: url('https://i.imgur.com/1Q9Z1ZK.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            text-shadow: 3px 3px 10px black;
+        }
+        header h1 { font-size: 4rem; font-weight: bold; }
+
+        /* Buttons hover */
+        .btn-custom {
+            transition: 0.3s;
+        }
+        .btn-custom:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+
+        /* Cards */
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+
+        /* Sections */
+        section { padding: 80px 0; }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: white;
+            padding: 50px 0;
+        }
+        footer a { color: #ffc107; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        /* Smooth fade-in animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Pagination center */
+        .pagination { justify-content: center; }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Janob Limonjon</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#home">Bosh sahifa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#news">Yangiliklar</a></li>
+                <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="#youtube">YouTube</a></li>
+                <li class="nav-item"><a class="nav-link" href="#telegram">Telegram</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Aloqa</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header id="home">
+    <div>
+        <h1>Janob Limonjon Minecraft Saytiga Xush Kelibsiz!</h1>
+        <p class="lead mt-3">Minecraft yangiliklari, eventlar va YouTube videolarining yagona manzili</p>
+        <a href="#news" class="btn btn-warning btn-lg mt-4 btn-custom">Yangiliklarni ko‘rish</a>
+    </div>
+</header>
+
+<!-- Yangiliklar bo'limi -->
+<section id="news" class="container">
+    <h2 class="text-center mb-5">So'nggi Yangiliklar</h2>
+    <div class="row g-4 fade-in">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://www.gearnuke.com/wp-content/sites/gearnuke/2025/08/Minecraft-update-550x309.jpg" class="card-img-top" alt="yangilik1">
+                <div class="card-body">
+                    <h5 class="card-title">Minecraft 1.22 Update</h5>
+                    <p class="card-text">Janob Limonjon serverida eng so'nggi update va maxsus modslar bilan tanishing!</p>
+                    <a href="#" class="btn btn-primary btn-custom">Batafsil</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://i.ytimg.com/vi/m6kcgvofT0o/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCny1t44ey_fdqULaLuCkv3kmTvMQ" class="card-img-top" alt="yangilik2">
+                <div class="card-body">
+                    <h5 class="card-title">Server Eventlar</h5>
+                    <p class="card-text">Har haftalik eventlar va sovrinlar sizni kutmoqda!</p>
+                    <a href="#" class="btn btn-primary btn-custom">Batafsil</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://i.ytimg.com/vi/rA_7wmPG_bg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB_OjELG9eYJ-pr8PhC9yz8UvGr5w" class="card-img-top" alt="yangilik3">
+                <div class="card-body">
+                    <h5 class="card-title">Minecraft Tutorial</h5>
+                    <p class="card-text">O'yin bo'yicha eng yaxshi strategiyalar va maslahatlar.</p>
+                    <a href="#" class="btn btn-primary btn-custom">Batafsil</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <nav aria-label="Page navigation example" class="mt-5">
+        <ul class="pagination">
+            <li class="page-item disabled"><a class="page-link" href="#">Oldingi</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Keyingi</a></li>
+        </ul>
+    </nav>
+</section>
+
+<!-- Features bo'limi -->
+<section id="features" class="bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Server Features (Yaqin kelajak uchun)</h2>
+        <div class="row g-4 fade-in">
+            <div class="col-md-3 text-center">
+                <i class="bi bi-controller fs-1 mb-3"></i>
+                <h5>Server Friendly</h5>
+                <p>Maxsus eventlar va do‘stona jamoa.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <i class="bi bi-cash fs-1 mb-3"></i>
+                <h5>Reward System</h5>
+                <p>Sizga sovrinlar va bonuslar beriladi.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <i class="bi bi-people fs-1 mb-3"></i>
+                <h5>Community</h5>
+                <p>Telegram va YouTube orqali aloqada bo‘ling.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <i class="bi bi-magic fs-1 mb-3"></i>
+                <h5>Mods & Updates</h5>
+                <p>Eng so‘nggi yangiliklar va modslar.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- YouTube & Telegram -->
+<section id="youtube" class="container my-5">
+    <h2 class="text-center mb-4">YouTube Kanalimiz</h2>
+    <div class="text-center">
+        <a href="https://www.youtube.com/@limonjon_gaming" target="_blank" class="btn btn-danger btn-lg btn-custom">@limonjon_gaming</a>
+    </div>
+</section>
+
+<section id="telegram" class="container my-5">
+    <h2 class="text-center mb-4">Telegram Kanallarimiz</h2>
+    <div class="row text-center g-3 fade-in">
+        <div class="col-md-4">
+            <a href="https://t.me/janob_limonjon" target="_blank" class="btn btn-success btn-lg w-100 btn-custom">@janob_limonjon</a>
+        </div>
+        <div class="col-md-4">
+            <a href="https://t.me/janob_limonjon_chat" target="_blank" class="btn btn-primary btn-lg w-100 btn-custom">@janob_limonjon_chat</a>
+        </div>
+        <div class="col-md-4">
+            <a href="https://t.me/limonjon_youtube" target="_blank" class="btn btn-warning btn-lg w-100 btn-custom">@limonjon_youtube</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section id="contact" class="container my-5">
+    <h2 class="text-center mb-4">Biz bilan bog'laning</h2>
+    <form>
+        <div class="mb-3">
+            <label for="name" class="form-label">Ismingiz</label>
+            <input type="text" class="form-control" id="name" placeholder="Ismingizni kiriting">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Emailingizni kiriting">
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Xabar</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Xabaringizni yozing"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-custom">Yuborish</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="container">
+        <p>© 2025 Janob Limonjon | Barcha huquqlar himoyalangan</p>
+        <div>
+            <a href="https://t.me/janob_limonjon" target="_blank">Telegram Kanal</a> |
+            <a href="https://www.youtube.com/@limonjon_gaming" target="_blank">YouTube Kanal</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<!-- Custom JS -->
+<script>
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+        document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Fade-in on scroll
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = { threshold: 0.3 };
+    const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('visible');
+                appearOnScroll.unobserve(entry.target);
+            }
+        });
+    }, appearOptions);
+    faders.forEach(fader => appearOnScroll.observe(fader));
+</script>
+</body>
+</html>
